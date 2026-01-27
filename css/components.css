@@ -1,0 +1,398 @@
+/* Components - Profesionální tlačítka, karty a navigace */
+
+/* ========== TLAČÍTKA ========== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all var(--transition-base);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn--primary {
+    background: var(--gradient-gold);
+    color: var(--color-primary-dark);
+    box-shadow: var(--shadow-gold);
+}
+
+.btn--primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 168, 75, 0.4);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn--secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--white {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--white:hover {
+    background-color: var(--color-cream);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn--ghost {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.btn--ghost:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn--sm {
+    padding: 0.625rem 1.25rem;
+    font-size: var(--font-size-xs);
+}
+
+.btn--lg {
+    padding: 1.25rem 2.5rem;
+    font-size: var(--font-size-base);
+}
+
+/* ========== BURGER MENU ========== */
+
+.header__burger {
+    display: none;
+    background: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-base);
+}
+
+.header__burger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.burger__line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+/* Burger menu otevřené */
+.header__burger.burger--open .burger__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header__burger.burger--open .burger__line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.header__burger.burger--open .burger__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ========== NAVIGACE ========== */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    transition: all var(--transition-base);
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-base);
+    cursor: pointer;
+    position: relative;
+    padding: var(--spacing-sm) 0;
+    display: inline-block;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-gold);
+    transition: all var(--transition-base);
+    transform: translateX(-50%);
+}
+
+.nav__link:hover {
+    color: var(--color-accent);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+/* ========== KARTY ========== */
+
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: var(--spacing-xl);
+}
+
+.card__title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card__text {
+    color: var(--color-gray);
+    line-height: var(--line-height-relaxed);
+}
+
+/* ========== BADGES ========== */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.badge--primary {
+    background: rgba(212, 168, 75, 0.15);
+    color: var(--color-accent-dark);
+}
+
+.badge--success {
+    background: var(--color-success-light);
+    color: var(--color-success);
+}
+
+/* ========== MOBILNÍ NAVIGACE ========== */
+
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .header__title {
+        font-size: var(--font-size-lg);
+        order: 1;
+    }
+
+    .header__burger {
+        display: flex;
+        order: 2;
+    }
+
+    .header__nav {
+        order: 3;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition-slow), padding var(--transition-slow);
+        flex-direction: column;
+        align-items: stretch;
+        background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%);
+        margin-top: var(--spacing-md);
+        border-radius: var(--radius-xl);
+        opacity: 0;
+    }
+
+    .header__nav.nav--open {
+        max-height: 500px;
+        padding: var(--spacing-md) 0;
+        opacity: 1;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .nav__item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav__item:last-child {
+        border-bottom: none;
+    }
+
+    .nav__link {
+        display: block;
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-radius: 0;
+        font-size: var(--font-size-base);
+    }
+
+    .nav__link::after {
+        display: none;
+    }
+
+    .nav__link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--color-accent);
+    }
+}
+
+/* ========== IKONY ========== */
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon--sm {
+    width: 20px;
+    height: 20px;
+}
+
+.icon--md {
+    width: 24px;
+    height: 24px;
+}
+
+.icon--lg {
+    width: 32px;
+    height: 32px;
+}
+
+/* ========== DIVIDER ========== */
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-gold);
+    margin: var(--spacing-lg) auto;
+    border-radius: var(--radius-full);
+}
+
+/* ========== TEXT STYLES ========== */
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-gray);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+}

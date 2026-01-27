@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrace – Hospůdka na Kurtech</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png"> 
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Administrační panel pro správu akcí hospůdky na Kurtech.">
+    <meta property="og:title" content="Administrace – Hospůdka na Kurtech">
+    <meta property="og:description" content="Správa akcí a obsahu hospůdky">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://DOMENA.cz/admin">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <h1 class="header__title">
+            Hospůdka na Kurtech
+        </h1>
+
+        <button class="header__burger" aria-label="Otevřít navigační menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+
+        <nav class="header__nav" id="nav-menu" role="navigation" aria-label="Hlavní navigační menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Domů</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">O nás</a></li>
+                <li class="nav__item"><a href="index.html#events" class="nav__link">Plánované akce</a></li>
+                <li class="nav__item"><a href="index.html#amenities" class="nav__link">Co tě u nás čeká</a></li>
+                <li class="nav__item"><a href="index.html#gallery" class="nav__link">Fotogalerie</a></li>
+                <li class="nav__item"><a href="index.html#info" class="nav__link">Kontakt</a></li>
+                <li class="nav__item"><a href="history.html" class="nav__link">Historie akcí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SEKCE -->
+    <section class="hero" aria-label="Úvodní sekce">
+        <div class="hero__content">
+            <h2 class="hero__title">Administrační panel</h2>
+            <p class="hero__subtitle">Správa akcí a obsahu hospůdky</p>
+        </div>
+    </section>
+
+    <!-- HLAVNÍ OBSAH -->
+    <section class="admin" aria-label="Administrační sekce">
+        <div class="container">
+            <h2 class="section__title">Přidej novou akci</h2>
+            
+            <div class="form-section">
+                <form id="event-form" class="event-form">
+                    <div class="form-group">
+                        <label for="event-date" class="form-label">Datum akce</label>
+                        <input type="date" id="event-date" name="event-date" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-title" class="form-label">Název akce</label>
+                        <input type="text" id="event-title" name="event-title" class="form-input" placeholder="Např. Valentýnská grilovačka" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-description" class="form-label">Popis akce</label>
+                        <textarea id="event-description" name="event-description" class="form-textarea" rows="5" placeholder="Podrobný popis akce" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Přidat akci</button>
+                </form>
+            </div>
+
+            <h2 class="section__title" style="margin-top: 3rem;">Přidaných akcí: <span id="event-count">0</span></h2>
+            
+            <div id="added-events" class="events__list" role="region" aria-label="Seznam přidaných akcí">
+                <!-- Akce se budou přidávat dynamicky -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PATIČKA -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Hospůdka na Kurtech</h3>
+                    <p class="footer__text">Místní hospůdka se zahrádkou, pergolou a tenisovými kurty.</p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__subtitle">Rychlé odkazy</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Domů</a></li>
+                        <li><a href="history.html" class="footer__link">Historie akcí</a></li>
+                        <li><a href="https://facebook.com/hospudkanamkurtech" class="footer__link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__subtitle">Kontakt</h3>
+                    <ul class="footer__list">
+                        <li><a href="tel:+420222222222" class="footer__link">+420 222 222 222</a></li>
+                        <li><a href="mailto:info@hospudkanamkurtech.cz" class="footer__link">info@hospudkanamkurtech.cz</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 Hospůdka na Kurtech. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+  
+    <!-- JS -->
+    <script src="js/menu.js"></script>
+    <script src="js/addEvent.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

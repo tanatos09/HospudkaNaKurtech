@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospůdka na Kurtech – Pivo, Zahrádka & Tenisové kurty | Praha</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hospůdka na Kurtech – útulná pivnice s velkou zahrádkou, pergolou, tenisovými kurty a dětským hřištěm. Poctivé české pivo a domácí atmosféra v Praze.">
+    <meta name="keywords" content="hospoda Praha, pivnice, zahrádka, tenisové kurty, dětské hřiště, české pivo, rodinná hospůdka">
+    <meta name="author" content="Hospůdka na Kurtech">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hospůdka na Kurtech – Vaše místní pivnice">
+    <meta property="og:description" content="Přijďte na poctivé pivo do naší hospůdky se zahrádkou, tenisovými kurty a dětským hřištěm.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hospudkanakurtech.cz">
+    <meta property="og:locale" content="cs_CZ">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hospůdka na Kurtech">
+    <meta name="twitter:description" content="Útulná pivnice s velkou zahrádkou a tenisovými kurty.">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__logo">
+            <h1 class="header__title">Hospůdka na Kurtech</h1>
+        </div>
+
+        <button class="header__burger" aria-label="Otevřít navigační menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+
+        <nav class="header__nav" id="nav-menu" role="navigation" aria-label="Hlavní navigace">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Domů</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">O nás</a></li>
+                <li class="nav__item"><a href="#events" class="nav__link">Akce</a></li>
+                <li class="nav__item"><a href="#amenities" class="nav__link">Areál</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Galerie</a></li>
+                <li class="nav__item"><a href="#info" class="nav__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SEKCE -->
+    <section class="hero" aria-label="Úvodní sekce">
+        <div class="hero__background" role="img" aria-label="Zahrádka hospůdky"></div>
+        <div class="hero__content">
+            <span class="hero__badge">✦ Od roku 1995</span>
+            <h2 class="hero__title">Hospůdka<br>na Kurtech</h2>
+            <p class="hero__subtitle">Poctivé české pivo, velká zahrádka s pergolou a tenisové kurty. Místo, kde se setkávají přátelé.</p>
+            <p class="hero__status" id="status">
+                <span class="status__indicator"></span>
+                <span id="status-text">Právě otevřeno</span>
+            </p>
+            <div class="hero__cta">
+                <a href="#info" class="btn btn--primary">Kde nás najdete</a>
+                <a href="#events" class="btn btn--ghost">Nadcházející akce</a>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <div class="hero__scroll-icon"></div>
+        </div>
+    </section>
+
+    <!-- O HOSPODĚ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section__title">O naší hospůdce</h2>
+            <p class="section__subtitle">Místo s příběhem a domácí atmosférou od roku 1995</p>
+            
+            <div class="about__content">
+                <div class="about__text fade-in">
+                    <p><strong>Hospůdka na Kurtech</strong> není jen obyčejná hospoda – je to místo, kde se setkávají sousedé, přátelé i náhodní kolemjdoucí. Už přes 25 let tu nabízíme to nejlepší z českého pohostinství.</p>
+                    
+                    <p>Nemáme velkou kuchyni ani fancy menu. Máme ale <strong>poctivě načepované pivo</strong>, klasické hospodské pochutiny jako utopence, nakládaný hermelín nebo domácí tlačenku. A hlavně – máme atmosféru, kterou jinde nenajdete.</p>
+                    
+                    <p>Naše velká <strong>zahrádka s pergolou</strong> je ideální pro letní večery, <strong>tenisové kurty</strong> pro aktivnější hosty a <strong>dětské hřiště</strong> pro rodiny s dětmi. Zkrátka – místo pro každého.</p>
+                </div>
+
+                <aside class="about__highlights fade-in">
+                    <h3>Co u nás najdete</h3>
+                    <ul class="highlights__list">
+                        <li class="highlight-item">🍺 Poctivé české pivo</li>
+                        <li class="highlight-item">🌿 Velká zahrádka s pergolou</li>
+                        <li class="highlight-item">🎾 Dva tenisové kurty</li>
+                        <li class="highlight-item">🧒 Bezpečné dětské hřiště</li>
+                        <li class="highlight-item">🏠 Salónek pro soukromé akce</li>
+                        <li class="highlight-item">🍖 Tradiční hospodské pochutiny</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLÁNOVANÉ AKCE -->
+    <section class="events" id="events" aria-labelledby="events-title">
+        <div class="container">
+            <h2 id="events-title" class="section__title">Plánované akce</h2>
+            <p class="section__subtitle">Připravujeme pro vás skvělé zážitky – grilovačky, turnaje i tematické večery</p>
+            
+            <div class="events__list" id="events-container" role="region" aria-live="polite">
+                <article class="event-card fade-in">
+                    <time class="event-card__date" datetime="2026-02-14">14. února 2026</time>
+                    <h3 class="event-card__title">Valentýnská grilovačka</h3>
+                    <p class="event-card__description">Speciální grilovací menu pro páry i jednotlivce. Romantická atmosféra, živá hudba a výběr vín.</p>
+                    <a href="#" class="event-card__link">Více informací →</a>
+                </article>
+
+                <article class="event-card fade-in">
+                    <time class="event-card__date" datetime="2026-02-22">22. února 2026</time>
+                    <h3 class="event-card__title">Zimní turnaj v pingpongu</h3>
+                    <p class="event-card__description">Přijďte si zahrát! Soutěž pro všechny věkové kategorie s hodnotnými cenami. Registrace u baru.</p>
+                    <a href="#" class="event-card__link">Více informací →</a>
+                </article>
+
+                <article class="event-card fade-in">
+                    <time class="event-card__date" datetime="2026-03-01">1. března 2026</time>
+                    <h3 class="event-card__title">Zahájení sezóny</h3>
+                    <p class="event-card__description">Slavnostní otevření zahrádky s grilováním, živou kapelou a speciálními akcemi pro děti.</p>
+                    <a href="#" class="event-card__link">Více informací →</a>
+                </article>
+            </div>
+
+            <div class="events__cta">
+                <a href="history.html" class="btn btn--outline">Prohlédnout minulé akce</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREÁL & VYŽITÍ -->
+    <section class="amenities" id="amenities" aria-labelledby="amenities-title">
+        <div class="container">
+            <h2 id="amenities-title" class="section__title">Co vás u nás čeká</h2>
+            <p class="section__subtitle">Náš areál nabízí vše pro příjemně strávený čas</p>
+            
+            <div class="amenities__grid">
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🌿</div>
+                    <h3 class="amenity-card__title">Zahrádka s pergolou</h3>
+                    <p class="amenity-card__description">Prostorná zahrádka se stinnými místy pod pergolou. Ideální pro letní posezení s přáteli.</p>
+                </article>
+
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🎾</div>
+                    <h3 class="amenity-card__title">Tenisové kurty</h3>
+                    <p class="amenity-card__description">Dva udržované antukové kurty. Rezervace na baru nebo telefonicky. Půjčovna raket k dispozici.</p>
+                </article>
+
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🧒</div>
+                    <h3 class="amenity-card__title">Dětské hřiště</h3>
+                    <p class="amenity-card__description">Bezpečná herní zóna s houpačkami a prolézačkami. Rodiče si mohou v klidu odpočinout.</p>
+                </article>
+
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🍺</div>
+                    <h3 class="amenity-card__title">Výčep & bar</h3>
+                    <p class="amenity-card__description">Pečlivě ošetřované pivo, výběr destilátů a nealko nápojů. Vždy čerstvé a správně vychlazené.</p>
+                </article>
+
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🏠</div>
+                    <h3 class="amenity-card__title">Salónek v patře</h3>
+                    <p class="amenity-card__description">Soukromý prostor pro oslavy, firemní akce nebo setkání. Kapacita až 25 osob.</p>
+                </article>
+
+                <article class="amenity-card fade-in">
+                    <div class="amenity-card__icon">🎵</div>
+                    <h3 class="amenity-card__title">Živá hudba & akce</h3>
+                    <p class="amenity-card__description">Pravidelné koncerty, tematické večery a turnaje. Sledujte náš program akcí.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+            <h2 id="gallery-title" class="section__title">Fotogalerie</h2>
+            <p class="section__subtitle">Nahlédněte do atmosféry naší hospůdky</p>
+            
+            <div class="gallery__grid" id="gallery-container" role="region" aria-label="Fotogalerie">
+                <figure class="gallery-item fade-in">
+                    <img src="img/50.jpg" alt="Grilovací akce v létě" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Letní grilovačka</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/catering1.jpg" alt="Útulný interiér baru" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Interiér hospůdky</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/catering2.jpg" alt="Tenisové kurty" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Tenisové kurty</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/gtilovani.jpg" alt="Posezení během akce" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Atmosféra během akcí</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/hospoda.jpg" alt="Stinná pergola" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pergola v zahrádce</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/hotdog.jpg" alt="Dětský koutek" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pro naše nejmenší</figcaption>
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="img/hrmelin.jpg" alt="Grilovací akce v létě" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Letní grilovačka</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/kava.jpg" alt="Útulný interiér baru" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Interiér hospůdky</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/kavovar.jpg" alt="Tenisové kurty" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Tenisové kurty</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/mimosa.jpg" alt="Posezení během akce" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Atmosféra během akcí</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/nanuky.jpg" alt="Stinná pergola" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pergola v zahrádce</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/pergola.jpg" alt="Dětský koutek" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pro naše nejmenší</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/sele.jpg" alt="Dětský koutek" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pro naše nejmenší</figcaption>
+                </figure>
+
+                <figure class="gallery-item fade-in">
+                    <img src="img/tatarak.jpg" alt="Dětský koutek" class="gallery-item__image" loading="lazy">
+                    <div class="gallery-item__overlay"></div>
+                    <figcaption class="gallery-item__caption">Pro naše nejmenší</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRAKTICKÉ INFORMACE -->
+    <section class="info" id="info" aria-labelledby="info-title">
+        <div class="container">
+            <h2 id="info-title" class="section__title">Kde nás najdete</h2>
+            <p class="section__subtitle">Těšíme se na vaši návštěvu</p>
+            
+            <div class="info__grid">
+                <div class="info-card fade-in">
+                    <h3 class="info-card__title">⏰ Otevírací doba</h3>
+                    <p class="info-card__text">
+                        <strong>Po – Pá:</strong> 14:00 – 23:00<br>
+                        <strong>So – Ne:</strong> 12:00 – 23:00<br>
+                        <small style="opacity: 0.7;">(V zimních měsících dle počasí)</small>
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3 class="info-card__title">📍 Adresa</h3>
+                    <p class="info-card__text">
+                        Hospůdka na Kurtech<br>
+                        Ul. Tenisových Kurtů 123<br>
+                        130 00 Praha 3
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3 class="info-card__title">📞 Kontakt</h3>
+                    <p class="info-card__text">
+                        <a href="tel:+420222222222" class="link">+420 222 222 222</a><br>
+                        <a href="mailto:info@hospudkanakurtech.cz" class="link">info@hospudkanakurtech.cz</a>
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3 class="info-card__title">📱 Sociální sítě</h3>
+                    <p class="info-card__text">
+                        <a href="https://facebook.com/hospudkanakurtech" class="link" target="_blank" rel="noopener">Facebook</a><br>
+                        <a href="https://instagram.com/hospudkanakurtech" class="link" target="_blank" rel="noopener">Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="info__map fade-in" role="region" aria-label="Poloha na mapě">
+                <iframe 
+                    title="Poloha hospůdky na Mapách Google"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5!2d14.4!3d50.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHosp%C5%AFdka%20na%20Kurtech!5e0!3m2!1scs!2scz!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- VÝZVA K AKCI -->
+    <section class="cta" aria-label="Výzva k návštěvě">
+        <div class="cta__background"></div>
+        <div class="cta__content">
+            <h2 class="cta__title">Stavte se na jedno 🍺</h2>
+            <p class="cta__text">Ať už chcete hrát tenis, relaxovat na zahrádce nebo jen posedět u dobrého piva – jste vítáni. Těšíme se na vás!</p>
+            
+            <div class="cta__buttons">
+                <a href="tel:+420222222222" class="btn btn--primary">Zavolejte nám</a>
+                <a href="https://facebook.com/hospudkanakurtech" class="btn btn--ghost" target="_blank" rel="noopener">Sledujte nás</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATIČKA -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Hospůdka na Kurtech</h3>
+                    <p class="footer__text">Vaše místní hospůdka se zahrádkou, pergolou a tenisovými kurty. Místo, kde se setkávají přátelé už od roku 1995.</p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__subtitle">Navigace</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Domů</a></li>
+                        <li><a href="#about" class="footer__link">O nás</a></li>
+                        <li><a href="#events" class="footer__link">Akce</a></li>
+                        <li><a href="history.html" class="footer__link">Historie akcí</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__subtitle">Kontakt</h3>
+                    <ul class="footer__list">
+                        <li><a href="tel:+420222222222" class="footer__link">+420 222 222 222</a></li>
+                        <li><a href="mailto:info@hospudkanakurtech.cz" class="footer__link">info@hospudkanakurtech.cz</a></li>
+                        <li><a href="https://facebook.com/hospudkanakurtech" class="footer__link" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://instagram.com/hospudkanakurtech" class="footer__link" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Hospůdka na Kurtech. Všechna práva vyhrazena.</p>
+                <p class="footer__admin"><a href="admin.html" class="footer__link footer__link--subtle">Administrace</a></p>
+            </div>
+        </div>
+    </footer>
+  
+    <!-- JS -->
+    <script src="js/menu.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
